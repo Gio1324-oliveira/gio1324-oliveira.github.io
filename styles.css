@@ -1,0 +1,286 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Fundo claro */
+    color: #333; /* Texto principal */
+}
+
+/* Header */
+header {
+    background: #004d40; /* Fundo verde escuro */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+/* Navegação */
+nav {
+    background-color: #00796b; /* Verde médio */
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+nav ul.menu li {
+    margin: 0;
+}
+
+nav ul.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul.menu li a:hover {
+    background: #004d40; /* Verde mais escuro */
+    color: #f4f4f4;
+}
+
+/* Menu responsivo */
+@media (max-width: 768px) {
+    nav ul.menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 2rem;
+    color: #00796b;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero .btn {
+    background: #004d40;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background: #004d40;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px;
+    background-color: #fff; /* Fundo branco */
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #004d40;
+    color: white;
+    padding: 1rem 0;
+}
+
+footer .socials a {
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+footer .socials a:hover {
+    text-decoration: underline;
+}
+
+
+/* Seção de Integrantes */
+.integrantes {
+    padding: 2rem;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+.integrantes h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #00796b;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+}
+
+.integrante {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.integrante img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.integrante h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #2c3e50;
+}
+
+.integrante p {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+
+/* Seção de Benefícios Econômicos */
+.beneficios {
+    padding: 3rem;
+    background-color: #f5f5f5;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.beneficios h2 {
+    font-size: 2rem;
+    color: #00796b;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.beneficios p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 3rem;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Categorias de Projetos */
+.categoria {
+    margin-bottom: 4rem;
+}
+
+.categoria h3 {
+    font-size: 2rem;
+    color: #00796b;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Projetos individuais */
+.projeto {
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projeto h4 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.projeto p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Melhorias na responsividade */
+@media (max-width: 768px) {
+    .beneficios h2 {
+        font-size: 2rem;
+    }
+
+    .beneficios p {
+        font-size: 1rem;
+    }
+
+    .projeto h4 {
+        font-size: 1.4rem;
+    }
+
+    .projeto {
+        padding: 1rem;
+    }
+}
+
+/* Seção Referencias */
+.referencia {
+    padding: 0.1rem;
+    background-color: #f5f5f5;
+    font-size: 1rem;
+}
+
+.referencia h2 {
+    font-size: 1.5rem;
+    color: #00796b;
+    text-align: center;
+    font-weight: bold;
+}
+
+.referencia p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1rem;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.video-container {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
